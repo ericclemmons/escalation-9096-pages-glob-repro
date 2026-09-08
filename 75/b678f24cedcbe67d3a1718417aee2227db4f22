@@ -1,0 +1,25 @@
+public/_routes.json
+  s_c0e1eeaded7283::t_c67c4dabb94816 1-12
+public/agenda/index.html
+  s_c0e1eeaded7283::t_54678e3562231d 1
+public/la-sala/index.html
+  s_c0e1eeaded7283::t_bf9a805c7d727f 1
+verify.sh
+  s_c0e1eeaded7283::t_1d8382369e3fb8 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "75b678f24cedcbe67d3a1718417aee2227db4f22",
+  "prompts": {},
+  "sessions": {
+    "s_c0e1eeaded7283": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a082b5-7dcc-7721-bf35-bfb086ed13bb",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Eric Clemmons <eclemmons@cloudflare.com>"
+    }
+  }
+}
