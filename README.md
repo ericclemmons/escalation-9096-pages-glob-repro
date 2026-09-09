@@ -2,6 +2,8 @@
 
 This repository distinguishes static asset responses from Pages Functions responses while exercising the route exclusions reported in ESCALATION-9096.
 
+Pages requires every `_routes.json` rule to start with `/`. The source rules therefore use `/*/…`; Pages compiles these to the downstream `*/…` glob form.
+
 ## Pages setup
 
 Connect this repository to a Pages project with:
