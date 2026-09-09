@@ -1,8 +1,6 @@
 # Pages route-exclude E2E reproduction
 
-This repository distinguishes static asset responses from Pages Functions responses while exercising the route exclusions reported in ESCALATION-9096.
-
-Pages requires every `_routes.json` rule to start with `/`. The source rules therefore use `/*/…`; Pages compiles these to the downstream `*/…` glob form.
+This repository distinguishes static asset responses from Pages Functions responses while exercising the affected route exclusions reported in ESCALATION-9096. The customer configuration contains about 80 individually listed paths; this minimal reproduction uses the three paths identified by the escalation's live traces.
 
 ## Pages setup
 
@@ -23,4 +21,4 @@ After deployment, set `PAGES_URL` and run:
 PAGES_URL=https://example.pages.dev ./verify.sh
 ```
 
-Both forms of each excluded path should return its asset marker. `/other` should return the Function marker. The script follows redirects and prints the final URL.
+The three excluded trailing-slash paths should return their asset markers. The non-trailing forms and `/other` are controls and should return the Function marker. The script follows redirects and prints the final URL.

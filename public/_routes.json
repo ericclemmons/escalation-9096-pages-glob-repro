@@ -2,11 +2,8 @@
   "version": 1,
   "include": ["/*"],
   "exclude": [
-    "/*/agenda",
-    "/*/agenda/",
-    "/*/la-sala",
-    "/*/la-sala/",
-    "/*/transparencia",
-    "/*/transparencia/"
+    "/agenda/",
+    "/la-sala/",
+    "/transparencia/"
   ]
 }
